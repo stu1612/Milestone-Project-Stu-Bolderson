@@ -1,0 +1,12 @@
+.holder {
+    position: relative;
+    display: block;
+}
+
+.logo-image {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+}
