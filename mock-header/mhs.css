@@ -1,12 +1,28 @@
-.holder {
-    position: relative;
-    display: block;
+.image-main {
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
+    
+.image-logo {
+    position:static;
+    left: calc(50% - 125px);
+    bottom:30%;
+    width: 250px;
+    height: auto;
 }
 
-.logo-image {
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    margin-top: -25px;
-    margin-left: -25px;
+@media screen and (max-width: 992px) {
+    .image-logo {
+        display:none;
+    }
+    
+    .image-main {
+        position:relative;
+        left:0;
+        top:0;
+        z-index:0;
+    }
 }
+    
