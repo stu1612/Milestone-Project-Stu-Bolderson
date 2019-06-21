@@ -1,0 +1,32 @@
+
+#playlist {
+    background-color: #e39134;
+}
+
+.table {
+   background-color:#fafae6; 
+   margin-top:50px;
+   margin-bottom:50px;
+}
+
+.pull-left {
+    height:50px;
+    width:50px;
+}
+
+.dropdown-toggle {
+    width:100%;
+}
+
+.clearfix a {
+    text-decoration: none;
+}
+
+.clearfix img {
+    margin-right: 5px;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+}
