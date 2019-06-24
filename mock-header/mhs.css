@@ -17,6 +17,21 @@ body {
 }
 
 
+.space-150 {
+    height:150px;
+}
+
+.space-50 {
+    height:50px;
+}
+
+.headline {
+    text-transform:uppercase;
+    background-color:#fafae6;
+    color:#3a89a4;
+}
+
+
 /*----------------------------------- Navbar section -------------------------*/
 
 .bg-light {
@@ -47,7 +62,7 @@ body {
   border: none;
 }
 
-.dropdown {
+.dropdown-navigation {
   position: relative;
   display: inline-block;
 }
@@ -73,7 +88,7 @@ body {
     color: #e39134;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-navigation:hover .dropdown-content {
     display: inline-block;
 }
 
@@ -92,7 +107,40 @@ body {
 
 #band-introduction {
     background-color: #f3df00;
+    height:auto;
 }
+
+.title-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius:5rem!important;
+}
+
+.title-about, .text-about {
+    color: #3a89a4;
+}
+
+
+
+/*------------- img left/right and heading text about section ----------*/
+
+.circle-img img{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    border:4px solid #fafae6;
+}
+
+.img-left, .img-right {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.img-right {
+    align-items:flex-end;
+}
+
+/*------------- tv box about section ------------*/
 
 #tv-box {
     position:relative;
@@ -112,6 +160,7 @@ body {
     transform: translate(-45%, -50%);
 }
 
+
 /*------------------------------ music section ------------------------------*/
 
 /* ------------- table for music singles ---------------- */
@@ -120,18 +169,20 @@ body {
     background-color: #e39134;
 }
 
+.title-music, .text-music {
+    text-align:center;
+    color:#fafae6;
+}
+
+
 .table {
    background-color:#ffffff;
    margin-top:80px;
    margin-bottom:80px;
 } 
 
-.table td {
-    border-top:none;
-}
-
-.table td:hover {
-    background-color:#ffffff;
+thead {
+   border:20px solid #3a89a4;
 }
 
 /* ------------ img styling /screen responsive ----------*/
@@ -196,9 +247,86 @@ body {
     color:#fafae6;
 }
 
+/*------------------- mobile music image ------------*/
 
+.mobile-music-img {
+    width:100%;
+}
+
+
+/*------------------------------ events section ------------------------------*/
+
+#events-background {
+    background-color: #d92b39;
+}
+
+/*------------ text box - events -----------------*/
+
+.events-text {
+    border-radius: 5rem;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .2);
+    color:#fafae6;
+    text-align:center;
+}
+
+/*------------ image box - events ----------------*/
+
+.xmas-image {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+/*------------ contact form - events  -------------*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  /*background-color: #f2f2f2;*/
+  padding: 20px;
+}
 
 /* ----------------------------- Media Queries -------------------------------*/
+
+@media screen and (max-width:1024px) {
+    .circle-img.img-right {
+        display:inline-block;
+        text-align:center;
+    }
+    
+    .circle-img.img-left {
+        display:inline-block;
+        text-align:center;
+    }
+}
+
 
 @media screen and (max-width:992px) {
     .navbar-dark .navbar-nav .nav-link {
@@ -206,6 +334,10 @@ body {
     }
     .navbar-collapse {
         margin-right:0;
+    }
+    
+     .xmas-image {
+        justify-content:center;
     }
 }
 
@@ -215,11 +347,49 @@ body {
         margin:0;
     }
     
+    .space-150 {
+        height:75px;
+    }
+    
+    .xmas-image {
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    
 }
 
 @media screen and (max-width:576px) {
     .navbar-dark .navbar-nav .nav-link {
         font-size:1rem;
     }
+    
+    .image-main {
+        padding-top:30px;
+    }
+    
+    .circle-img img {
+        height:80px;
+        width:80px;
+    }
+    
+    .space-150 {
+        height:50px;
+    }
+    
+    .tv {
+        display:none;
+    }
+    
+    .centered {
+        position:relative;
+        top:0;
+        left:0;
+        transform:none;
+    }
+    
+    .tv-image {
+        border: 5px solid #fafae6;
+    }
+    
 }
 

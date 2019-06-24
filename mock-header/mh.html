@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <script src="https://kit.fontawesome.com/67768a2f6d.js"></script>
     <link rel="stylesheet" href="mhs.css" type="text/css" />
-    <title>Header / landing page</title>
+    <title>The Monkees | Official Fans Site</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                     <a class="nav-link" href="#">The Events</a>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                   <div class="dropdown">
+                   <div class="dropdown-navigation">
                      <a class="nav-link droplink" href="#"># SOCIAL</a>                   
                     <div class="dropdown-content">
                       <a href="#"><i class="fab fa-facebook"></i></a>
@@ -73,25 +73,46 @@
     <!-- ******************************** about the monkees **************************-->
    
    <section class="about">
-         <div class="container-fluid" id="band-introduction">
-             <div class="container text-center" id="tv-box">
-                 <img src="../assets/images/vintage tv.png" class="img-responsive"/>
-                 <div class="centered">
-                     <img src="../assets/images/monkees.jpg" class="img-responsive"/>
-                 </div>
-             </div>
-         </div>
+       <div class="container-fluid" id="band-introduction">
+           <div class="container space-150"></div>
+            <div class="container title-container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 circle-img img-left">
+                        <img src="../assets/images/dj.jpg" class="top-left">
+                        <img src="../assets/images/pt.jpg" class="bottom-left">
+                    </div>
+                    <div class="col-lg-6 col-md-12 centered-text text-center">
+                        <h1 class="title-about">The Monkees</h1>
+                        <p class="text-about"> For over 50 years, the Monkees are recognised as the one of the most successful bands of the 60's with international hits such as "Last Train to Clarksville" and "I'm a Believer".  Despite the 
+                        band breaking up in 1971, the band have continued to tour and record new hits.  So, we have dedicated this fans site to all the wonderful Monkees followers who want to listen to their classic hits as we all stay on top of their most recent records.  
+                        The Monkees are also available for private bookings - whether its Wedding / Business / or Seasonal events.  The Monkees are currently taking bookings for their most recent album, "The Christmas Party".  </p>
+                    </div>
+                    <div class="col-lg-3 col-md-12 circle-img img-right">
+                        <img src="../assets/images/mn.jpg" class="top-right">
+                        <img src="../assets/images/md.jpg" class="bottom-right">
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center" id="tv-box">
+                <img src="../assets/images/vintage tv.png" class="img-responsive tv" />
+                <div class="centered">
+                    <img src="../assets/images/monkees.jpg" class="img-responsive tv-image"/>
+                </div>
+            </div>
+        </div>
     </section>
     
     <!-- **************************** about the music *******************************-->
     
     <section class="music">
-     
          <div class="container-fluid" id="playlist">
+             <div class="container space-150"></div>
+             <h2 class="title-music">The Music</h2>
+                 <p class="text-music">Here you can access and watch all your favourite "Monkees" hits </p>
             <div class="container" id="playlist-background-color">
                 <div class="table-responsive d-none d-lg-block">
                     <table class="table">
-                        <thead style="border:1px solid black">
+                        <thead>
                             <tr class="top-playlist-row">
                                 <th>1966</th>
                                 <th>1967</th>
@@ -336,6 +357,7 @@
                                 </thead>
                             </table>
                         </div>
+                        
                     </div>
               
               <!-- ********************* about the music MOBILE HTML **********************-->
@@ -445,13 +467,76 @@
             
             </div>
             <div class="col-sm-12 col-md-6 d-lg-none">
-                <img src="../assets/images/monkees_albumcover.jpg" class="img-fluid"></img>
+                <img src="../assets/images/band.jpg" class="img-responsive mobile-music-img">
             </div>
             </div>
             
             <!-- *********** end of div *************-->
         </div>
-        
+    </section>
+    
+    <!-- **************************** about the events *******************************-->
+    
+    <section class="events">
+        <div class="container-fluid" id="events-background">
+            <div class="container space-50"></div>
+            <div class="container events">
+                <div class="row">
+                    <div class="col-sm-12 order-2 col-md-12 col-lg-6 xmas-image">
+                        <img src="../assets/images/mon_xmas.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-sm-12 order-1 col-md-12 col-lg-6 events-text">
+                        <h2 class><span class="headline">book your special monkees xmas party!</span></h2>
+                            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                            dolor in hendrerit in vulputate velit esse molestie consequat,
+                            vel illum dolore eu.</p>
+                    </div>
+                </div>      
+                <div class="row">  
+                    <div class="col-lg-12">
+                       <div class="container">
+                          <form action="action_page.php">
+                        
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                              <option value="australia">Australia</option>
+                              <option value="canada">Canada</option>
+                              <option value="usa">USA</option>
+                            </select>
+                        
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Submit">
+                        
+                          </form>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+            <!-- end of div-->
+        </div>
     </section>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

@@ -73,3 +73,22 @@
     color:#fafae6;
 }
 
+/* --------------- testing for overlay ----------- */
+
+.img-fluid w-100 image-main {
+    position:relative;
+    width:80%;
+    height:400px;
+}
+
+.container-fluid {
+    padding-left:0;
+    padding-right:0;
+}
+
+#test-background {
+    position:absolute;
+    top:0px;
+    left:0;
+    width:100%;
+}
