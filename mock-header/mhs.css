@@ -356,6 +356,10 @@ input[type=submit]:hover {
         margin-bottom:20px;
     }
     
+    .mobile-music-img {
+        margin-bottom:40px;
+    }
+    
 }
 
 @media screen and (max-width:576px) {
@@ -391,5 +395,14 @@ input[type=submit]:hover {
         border: 5px solid #fafae6;
     }
     
+     .mobile-music-img {
+        margin-top:20px;
+    }
 }
 
+@media screen and (max-width:320px) {
+    .xmas-image {
+        width:100%;
+        flex-direction:column;
+    }
+}
