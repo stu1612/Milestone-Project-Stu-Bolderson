@@ -12,24 +12,7 @@ red/orange - #bb3928
 
 /*------------------------------- Universal ----------------------------------*/
 
-/*body {
-    margin-top:70px;
-}*/
 
-
-.space-150 {
-    height:150px;
-}
-
-.space-50 {
-    height:50px;
-}
-
-.headline {
-    text-transform:uppercase;
-    background-color:#fafae6;
-    color:#3a89a4;
-}
 
 /*---------------------------------- NAVBAR ----------------------------------*/
 
@@ -41,8 +24,14 @@ red/orange - #bb3928
 }
 
 .header {
-    display:flex;
-    justify-content:space-between
+    display: flex;
+    justify-content: space-between;
+    background-color: #3a89a4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
 }
 
 nav {
@@ -58,321 +47,79 @@ nav ul li {
     cursor:pointer;
 }
 
+nav ul li a {
+    color:#fafae6;
+    text-decoration:none;
+}
+
+nav ul li a:hover {
+    color:#f3df00;
+}
+
 
 /*------------- Navbar section - mobile resolution -----------*/
 
-.mobile i {
-    color:#fafae6;
-    padding:5px;
-}
-
-.mobile i:hover {
-    color: #e39134;
-}
-
-/*------------------------------ about Section ------------------------------*/
-
-#band-introduction {
-    background-color: #f3df00;
-    height:auto;
-}
-
-.title-container {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius:5rem!important;
-}
-
-.title-about, .text-about {
-    color: #3a89a4;
-}
-
-
-
-/*------------- img left/right and heading text about section ----------*/
-
-.circle-img img{
-    height:100px;
-    width:100px;
-    border-radius:50%;
-    border:4px solid #fafae6;
-}
-
-.img-left, .img-right {
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-}
-
-.img-right {
-    align-items:flex-end;
-}
-
-/*------------- tv box about section ------------*/
-
-#tv-box {
-    position:relative;
-}
-
-#tv-box img {
-    width:80%;
-    height:80%;
-    margin-top:50px;
-    margin-bottom:50px;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-45%, -50%);
-}
-
-
-/*------------------------------ music section ------------------------------*/
-
-/* ------------- table for music singles ---------------- */
-
-#playlist {
-    background-color: #e39134;
-}
-
-.title-music, .text-music {
-    text-align:center;
-    color:#fafae6;
-}
-
-
-.table {
-   background-color:#ffffff;
-   margin-top:80px;
-   margin-bottom:80px;
-} 
-
-thead {
-   border:20px solid #3a89a4;
-}
-
-/* ------------ img styling /screen responsive ----------*/
-
-.pull-left {
-    height:50px;
-    width:50px;
-}
-
-.dropdown {
-    display:block;
-}
-
-
-
-.dropdown-toggle {
-    width:100%;
-}
-
-.clearfix a {
-    text-decoration: none;
-    color:#3a89a4;
-}
-
-.clearfix img {
-    margin-right: 5px;
-    border-radius:50%;
-}
-
-.table td:hover .clearfix img {
-    border:1px solid black;
-}
-
-.table td:hover .clearfix a {
-    color:black;
-}
-
-/* -------------- button select elemnts ----------------*/
-
-.btn-primary {
-    background-color:#fafae6;
-    color:#3a89a4;
-    border: 1px solid lightgrey;
-}
-
-.btn-primary:hover {
-    background-color:#3a89a4;
-    color: #fafae6;
-    border:none;
-}
-
-.show>.btn-primary.dropdown-toggle {
-    background-color:#3a89a4;
-    color: #fafae6;
-    border:none;
-}
-
-.btn:focus {
-    background-color:white;
-}
-
-.dropdown-item:hover {
-    background-color:#3a89a4;
-    color:#fafae6;
-}
-
-
-/*------------------- mobile music image ------------*/
-
-.mobile-music-img {
-    width:100%;
-}
-
-
-/*------------------------------ events section ------------------------------*/
-
-#events-background {
-    background-color: #d92b39;
-}
-
-/*------------ text box - events -----------------*/
-
-.events-text {
-    border-radius: 5rem;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, .2);
-    color:#fafae6;
-    text-align:center;
-}
-
-/*------------ image box - events ----------------*/
-
-.xmas-image {
-    display:flex;
-    flex-direction: row-reverse;
-}
-
-/*------------ contact form - events  -------------*/
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
+.dropbtn-nav {
+  background-color: #3a89a4;
   color: white;
-  padding: 12px 20px;
+  padding: 16px;
+  font-size: 16px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+/* The container <div> - needed to position the dropdown content */
+.dropdown-nav {
+  position: relative;
+  display: inline-block;
+  margin: auto;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  /*background-color: #f2f2f2;*/
-  padding: 20px;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-nav {
+  display: none;
+  background-color: #3a89a4;
+  width:auto;
+  z-index: 1;
 }
 
-/* ----------------------------- Media Queries -------------------------------*/
+/* Links inside the dropdown */
+.dropdown-content-nav a {
+  color: #fafae6;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-@media screen and (max-width:1024px) {
-    .circle-img.img-right {
-        display:inline-block;
-        text-align:center;
-    }
-    
-    .circle-img.img-left {
-        display:inline-block;
-        text-align:center;
-    }
+/* Change color of dropdown links on hover */
+.dropdown-content-nav a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown-nav:hover .dropdown-content-nav {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-nav:hover .dropbtn-nav {
+  background-color: #3a89a4;
+}
+
+/*------------------------------ main banner image -------------*/
+
+.image-main {
+    margin-top:70px;
 }
 
 
-@media screen and (max-width:992px) {
-    .navbar-dark .navbar-nav .nav-link {
-        margin:5px;
-    }
-    .navbar-collapse {
-        margin-right:0;
-    }
-    
-     .xmas-image {
-        justify-content:center;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .navbar-dark .navbar-nav .nav-link {
-        font-size:.8rem;
-        margin:0;
-    }
-    
-    .space-150 {
-        height:75px;
-    }
-    
-    .xmas-image {
-        margin-top:20px;
-        margin-bottom:20px;
-    }
-    
-    .mobile-music-img {
-        margin-bottom:40px;
-    }
-    
-}
-
-@media screen and (max-width:576px) {
-    .navbar-dark .navbar-nav .nav-link {
-        font-size:1rem;
-    }
-    
-    .image-main {
-        padding-top:30px;
-    }
-    
-    .circle-img img {
-        height:80px;
-        width:80px;
-    }
-    
-    .space-150 {
-        height:50px;
-    }
-    
-    .tv {
+@media screen and (min-width:681px) {
+    .dropdown-nav {
         display:none;
     }
-    
-    .centered {
-        position:relative;
-        top:0;
-        left:0;
-        transform:none;
-    }
-    
-    .tv-image {
-        border: 5px solid #fafae6;
-    }
-    
-     .mobile-music-img {
-        margin-top:20px;
+}
+
+@media screen and (max-width:680px) {
+    .desktop-nav {
+        display:none;
     }
 }
 
-@media screen and (max-width:320px) {
-    .xmas-image {
-        width:100%;
-        flex-direction:column;
-    }
-}
