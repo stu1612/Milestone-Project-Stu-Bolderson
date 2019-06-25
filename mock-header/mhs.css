@@ -198,9 +198,8 @@ nav ul li a:hover {
 
 
 td a {
-    display:inline-block;
-    margin-top:20%;
-    margin-right:20px;
+    display:flex;
+    margin: 30px 10px 0 10px;  
 }
 
 .album-song {
@@ -218,9 +217,12 @@ td a {
 }
 
 .pull-left {
-    height:150px;
-    width:150px;
+    height:120px;
+    width:120px;
     border-radius:50%;
+    margin-right:15px;
+    margin-bottom:10px;
+    border:2px solid #e39134;
 }
 
 tr {
