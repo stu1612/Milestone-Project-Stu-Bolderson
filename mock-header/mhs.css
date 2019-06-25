@@ -172,6 +172,61 @@ nav ul li a:hover {
     border:10px solid #fafae6;
 }
 
+/*------------------------------ about the music-------------*/
+
+.background.music {
+    display:flex;
+    flex-direction:column;
+    background-color: #e39134;
+    background-size:cover;
+    width:100%;
+    height:auto;
+    padding:75px 0;
+}
+
+.music-table {
+    display:block;
+    margin:auto;
+    background-color:#fafae6;
+    padding:5px;
+}
+
+.music-col a {
+    text-decoration:none;
+}
+
+
+td a {
+    display:inline-block;
+    margin-top:20%;
+    margin-right:20px;
+}
+
+.album-song {
+    text-decoration:none;
+    background-color:#3a89a4;
+    color:#fafae6;
+    border-radius:5rem;
+    margin-left:10px;
+    padding:5px;
+}
+
+.album-song:hover {
+    color:#3a89a4;
+    background-color:#fafae6;
+}
+
+.pull-left {
+    height:150px;
+    width:150px;
+    border-radius:50%;
+}
+
+tr {
+    text-align:center;
+}
+
+
 /*------------------------------- Media Queries --------------------*/
 
 @media screen and (max-width: 1024px) {
