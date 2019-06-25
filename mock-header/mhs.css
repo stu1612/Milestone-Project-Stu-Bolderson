@@ -177,13 +177,15 @@ nav ul li a:hover {
     .background.about {
         display:flex;
         flex-direction:column; 
-        height:auto;  
+        height:auto;
+        padding:40px 10px;  
     }
     .box-side {
         display:none;
     }
     .box-center {
-        
+        width:100%;
+        height:auto
     }
 }
 
