@@ -35,7 +35,7 @@ HTML {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #3a89a4;
     position: fixed;
     top: 0;
@@ -44,7 +44,11 @@ HTML {
     z-index: 1;
 }
 
-nav {
+.nav {
+    text-align:right;
+}
+
+/*nav {
     margin:auto 0;
     padding-left:10px;
 }
@@ -67,7 +71,7 @@ nav ul li a:hover {
 }
 
 
-/*------------- Navbar section - mobile resolution -----------*/
+
 
 .dropbtn-nav {
     background-color: #3a89a4;
@@ -312,8 +316,6 @@ tr {
 
 /*-------------------- music images ------------------------ */
 
-
-
 .band-image {
     height:300px;
     width:300px;
@@ -493,7 +495,7 @@ label {
 
 @media screen and (min-width:681px) {
     .dropdown-nav {
-        display:none;
+        
     }
 }
 
@@ -508,7 +510,7 @@ label {
     }
     
     .desktop-nav {
-        display:none;
+    
     }
 }
 
@@ -528,3 +530,18 @@ label {
     }  
 }
 
+
+/*------------------- test ---------
+.desktop-nav ul {
+    display:none;
+}
+
+.desktop-nav input:checked + ul {
+    display:block;
+}
+
+@media screen and (min-width:768px) {
+    input {
+        display:none;
+    }
+}*/
