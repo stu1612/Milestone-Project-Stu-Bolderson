@@ -47,13 +47,12 @@ HTML {
     text-align:right;
     height:auto;
     line-height:70px;
-    background-color:pink;
     float:right;
     margin-top:25px
 }
 
 .menu {
-  margin: 0 30px 0 0;
+  margin: 0 80px 0 0;
 }
 
 .menu a {
@@ -61,6 +60,10 @@ HTML {
   margin:0 10px;
   line-height:70px;
   color:#fafae6;
+}
+
+.menu a:hover {
+    color:#f3df00;
 }
 
 label {
@@ -76,79 +79,6 @@ label {
   display:none;
 }
 
-/*nav {
-    margin:auto 0;
-    padding-left:10px;
-}
-
-nav ul li {
-    display:inline-block;
-    margin: 15px 20px 0 0;
-    align-items:center; 
-    padding:10px;
-    cursor:pointer;
-}
-
-nav ul li a {
-    color:#fafae6;
-    text-decoration:none!important;
-}
-
-nav ul li a:hover {
-    color:#f3df00;
-}
-
-
-
-
-.dropbtn-nav {
-    background-color: #3a89a4;
-    color: #fafae6;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown-nav {
-    position: relative;
-    display: inline-block;
-    margin: auto;
-}
-
-.dropdown-content-nav {
-    display: none;
-    background-color: #3a89a4;
-    width:auto;
-    z-index: 1;
-}
-
-.dropdown-content-nav a {
-    color: #fafae6;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content-nav a:hover {
-    color:#f3df00;
-}
-
-.dropdown-nav:hover .dropdown-content-nav {
-    display: block;
-}
-
-.dropdown-nav:hover .dropbtn-nav {
-    background-color: #3a89a4;
-}
-
-.dropdown-content-nav ul li {
-    display:inline-block;
-}
-
-.dropdown-content-nav ul {
-    padding-inline-start:0!important;
-}
 
 /*------------------------------ main banner image -------------*/
 
@@ -534,22 +464,29 @@ label {
     label {
         display:block;
         cursor:pointer;
+        margin:auto;
     }
     
     .menu {
         text-align:center;
         width:100%;
         display:none;
+        margin:0;
     }
     
     .menu a {
         display:block;
         margin:0;
+        line-height:50px;
     }
     
     #toggle:checked + .menu {
         display:block;
     }
+    
+    .banner-image {
+        margin-top:210px;
+    } 
 }
 
 
@@ -563,7 +500,6 @@ label {
 @media screen and (max-width:500px) {
     .banner-image {
         height:250px;
-        margin-top:160px;
     }
 }
 
@@ -577,17 +513,4 @@ label {
 }
 
 
-/*------------------- test ---------
-.desktop-nav ul {
-    display:none;
-}
 
-.desktop-nav input:checked + ul {
-    display:block;
-}
-
-@media screen and (min-width:768px) {
-    input {
-        display:none;
-    }
-}*/
