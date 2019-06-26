@@ -12,7 +12,16 @@ red/orange - #bb3928
 
 /*------------------------------- Universal ----------------------------------*/
 
+HTML {
+    scroll-behavior:smooth;
+}
 
+.anchor{
+  display: block;
+  height: 115px; 
+  margin-top: -115px;
+  visibility: hidden;
+}
 
 
 /*---------------------------------- NAVBAR ----------------------------------*/
@@ -174,7 +183,7 @@ nav ul li a:hover {
     text-align:center;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius:5rem;
+    border-radius:5rem!important;
 }
 
 
@@ -371,10 +380,24 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  /*background-color: #f2f2f2;*/
   padding: 20px;
 }
 
+label {
+    color:#fafae6!important;
+}
+
+/*-------------------------------- footer ----------------------*/
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3a89a4;
+  color: #fafae6;
+  text-align: center;
+  padding-bottom:1rem;
+}
 
 
 /*------------------------------- Media Queries --------------------*/
@@ -458,6 +481,13 @@ input[type=submit]:hover {
     .music-table-text {
         margin-bottom: 30px;
     }
+    
+    .xmas-image {
+        display:flex;
+        flex-direction: inherit;
+        justify-content:center;
+        margin-top:30px;
+    }
 }
 
 
@@ -488,3 +518,13 @@ input[type=submit]:hover {
         margin-top:160px;
     }
 }
+
+@media screen and (max-width:350px) {
+    .xmas-image {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        margin-top:30px;
+    }  
+}
+

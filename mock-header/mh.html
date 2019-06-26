@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/67768a2f6d.js"></script>
     <link rel="stylesheet" href="mhs.css" type="text/css" />
     <title>The Monkees | Official Fans Site</title>
@@ -19,12 +20,14 @@
     <!-- ****************** Navigation ************************ -->
     
     <div class="header">
-        <img src="../assets/images/monkees-logo.png" class="logo-img"></img>
+        <a href="#home"><img src="../assets/images/monkees-logo.png" class="logo-img"></a>
+    
         <nav class="desktop-nav">
+            
             <ul>
-                <li><a href="#">The Monkees</a></li>
-                <li><a href="#">The Music</a></li>
-                <li><a href="#">The Events</a></li>
+                <li><a href="#section-about">The Monkees</a></li>
+                <li><a href="#section-music">The Music</a></li>
+                <li><a href="#section-events">The Events</a></li>
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -33,9 +36,9 @@
         <div class="dropdown-nav">
           <button class="dropbtn-nav"><i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content-nav">
-            <a href="#">The Monkees</a>
-            <a href="#">The Music</a>
-            <a href="#">The Events</a>
+            <a href="#section-about">The Monkees</a>
+            <a href="#section-music">The Music</a>
+            <a href="#section-events">The Events</a>
                 <ul>
                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -44,19 +47,24 @@
           </div>
         </div>
     </div>
-        
     
     <!-- *************************************** image banner ********************** -->
     <main>
         <section>
+            <span class="anchor" id="home"></span>
+            <div class="section"></div>
             
-            <div class="banner-image" class="img-responsive"></div>
+            <div class="banner-image" class="img-responsive">
+            </div>
             
         </section>
         
     <!-- *************************************** about section ********************** -->    
         
         <section class="about">
+            <span class="anchor" id="section-about"></span>
+            <div class="section"></div>
+
             
             <div class="background about">
                 <div class="container box-side left">
@@ -92,7 +100,11 @@
         
         <!-- *************************************** music section ********************** -->  
         
-        <section class="music">
+        <section id="music">
+            
+            <span class="anchor" id="section-music"></span>
+            <div class="section"></div>
+
         
             <div class="background music">
                 <div class="music-table-text">
@@ -281,13 +293,17 @@
             </div>
         </section>
         
-        <section class="events">
+        <section id="events">
+            
+            <span class="anchor" id="section-events"></span>
+            <div class="section"></div>
+
             
             <div class="container-fluid" id="events-background">
                 <div class="container space-50"></div>
                 <div class="container events">
                     <div class="row">
-                        <div class="col-sm-12 order-2 col-md-12 col-lg-6 xmas-image">
+                        <div class="col-sm-12 order-2 col-md-12 col-lg-6 text-center xmas-image">
                             <img src="../assets/images/mon_xmas.jpg" class="img-responsive">
                         </div>
                         <div class="col-sm-12 order-1 col-md-12 col-lg-6 events-text">
@@ -328,6 +344,10 @@
         </section>
         
     </main>
+    
+    <div class="footer">
+         <p>© The Monkees</p>
+    </div>
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
