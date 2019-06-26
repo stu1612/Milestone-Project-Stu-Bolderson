@@ -12,6 +12,10 @@ red/orange - #bb3928
 
 /*------------------------------- Universal ----------------------------------*/
 
+body {
+    margin:0;
+}
+
 HTML {
     scroll-behavior:smooth;
 }
@@ -92,18 +96,76 @@ label {
     height:750px;
 }
 
-/*------------------------------ about the monkees-------------*/
+/*------------------------------ THE MONKEES -------------*/
 
-/*----- top section-----------*/
 
 .background.about {
     display:flex;
+    flex-direction:column;
     background-color: #f3df00;
     background-size:cover;
     width:100%;
     height:auto;
     padding:100px 0;
+    justify-content:center;
 }
+
+.content-box {
+    height:400px;
+    width:80%;
+    border-radius:4rem;
+    display:flex;
+    flex-direction:row;
+    margin:auto;
+    background-color:rgba(255,255,255,0.4);
+}
+
+.circle-images {
+    height:auto;
+    width:20%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.circle-images img {
+    height:130px;
+    width:130px;
+    border-radius:50%;
+    border:8px solid #3a89a4;
+}
+
+.text-box {
+    height:auto;
+    width:60%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.text-box p {
+    padding:0 20px;
+    display:flex;
+    text-align:center
+}
+
+.image-box {
+  display:flex;
+  justify-content:center;
+  padding:100px 0;
+}
+
+.image-box img {
+  width:70%;
+  border:10px solid #fafae6;
+  border-radius:50%;
+}
+
+
+
+/*
 
 .about-image {
     display:flex;
@@ -124,10 +186,12 @@ label {
 
 .left {
     align-items:flex-end;
+    margin-right:15px;
 }
 
 .right {
     align-items:flex-start;
+    margin-left:15px;
 }
 
 .box-side img {
@@ -143,16 +207,17 @@ label {
     height:300px;
     width:50%;
     text-align:center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius:5rem!important;
+    padding: 0 20px;
 }
 
 
-/*------------------- bottom section (band images) -------------*/
 
-.image-box img {
-    display:block;
+
+.image-box  {
+    display:flex;
     height:auto;
     width:80%;
     margin:0 auto;
@@ -285,67 +350,21 @@ tr {
     margin-top:50px;
 }
 
-/*------------------------------- about the events -------------------------*/
+/*------------------------------- EVENTS -------------------------*/
 
-#events-background {
-    background-color: #d92b39;
-}
-
-/*------------ text box - events -----------------*/
-
-.events-text {
-    border-radius: 5rem;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, .2);
-    color:#fafae6;
-    text-align:center;
-}
-
-/*------------ image box - events ----------------*/
-
-.xmas-image {
+.background.events {
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction:column;
+    background-color: #d92b39;
+    background-size:cover;
+    width:100%;
+    height:auto;
+    padding:100px 0;
 }
 
-/*------------ contact form - events  -------------*/
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  padding: 20px;
-}
-
-label {
-    color:#fafae6!important;
-}
 
 /*-------------------------------- footer ----------------------*/
 
@@ -360,101 +379,15 @@ label {
 }
 
 
-/*------------------------------- Media Queries --------------------*/
+/*------------------------------- MEDIA QUERIES --------------------*/
 
-@media screen and (max-width: 1024px) {
-    .banner-image {
-        height:550px;
-    }
-    
-    .pull-left {
-        width:80px;
-        height:80px;
-    }
-}
-
-@media screen and (max-width: 956px) {
-    .music-table {
-        display:none;
-    }
-    
-    .music-table-mobile {
-        display:flex;
-        flex-direction:column;
-    }
-    
-    .dropdown {
-        display:block;
-        margin:auto;
-    }
-    
-    .dropbtn {
-        width:300px;
-        margin:5px;
-        border-radius:5rem;
-    }
-    
-    nav ul li {
-        margin-right:0;
-    }
-}
-
-@media screen and (min-width:957px) {
-    .music-table-mobile {
-        display:none;
-    }
-}
+/*------------------------------- NAVBAR MEDIA QUERIES --------------------*/
 
 @media screen and (max-width:768px) {
     .header {
         justify-content:center;
     }
-    
-    
-    .banner-image {
-        height:450px;
-    }
-    
-    .background.about {
-        display:flex;
-        flex-direction:column; 
-        height:auto;
-        padding:30px 10px;  
-    }
-    
-    .box-side {
-        display:none;
-    }
-    
-    .box-center {
-        width:100%;
-        height:auto
-    }
-    
-    .image-box img {
-        width:100%;
-    }
-    
-    .about-image {
-        padding-bottom:50px;
-    }
-    
-    .background.music {
-        padding:50px 0;
-    }
-    
-    .music-table-text {
-        margin-bottom: 30px;
-    }
-    
-    .xmas-image {
-        display:flex;
-        flex-direction: inherit;
-        justify-content:center;
-        margin-top:30px;
-    }
-}
-
+}   
 
 @media screen and (max-width:700px) {
     .header {
@@ -490,11 +423,23 @@ label {
 }
 
 
-@media screen and (max-width:680px) {
-    .image-main {
-        margin-top:170px;
+/*------------------------------- BANNER MEDIA QUERIES --------------------*/
+
+@media screen and (max-width: 1024px) {
+    .banner-image {
+        height:550px;
     }
-    
+}
+
+@media screen and (max-width:768px) {   
+    .banner-image {
+        height:450px;
+}
+
+@media screen and (max-width:700px) {
+    .banner-image {
+        margin-top:210px;
+    } 
 }
 
 @media screen and (max-width:500px) {
@@ -502,6 +447,116 @@ label {
         height:250px;
     }
 }
+
+
+/*------------------------------- THE MONKEES MEDIA QUERIES --------------------*/
+
+@media screen and (max-width:922px) {
+  .circle-images img {
+    height:80px;
+    width:80px;
+  }
+}
+
+@media screen and (max-width:768px) {
+    .background.about {
+        padding:50px 0;
+    }
+    
+    
+    .image-box {
+        padding:30px 0;
+    }
+}
+
+@media screen and (max-width:649px) {
+    .circle-images {
+        display:none;
+    }
+    .text-box {
+        width:100%;
+        height:auto;
+    }
+    .background.about {
+        padding:20px 0;
+    }
+    .image-box img {
+        width:80%;
+        border:none;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .pull-left {
+        width:80px;
+        height:80px;
+    }
+}
+
+@media screen and (max-width: 956px) {
+    .music-table {
+        display:none;
+    }
+    
+    .music-table-mobile {
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .dropdown {
+        display:block;
+        margin:auto;
+    }
+    
+    .dropbtn {
+        width:300px;
+        margin:5px;
+        border-radius:5rem;
+    }
+    
+   
+}
+
+@media screen and (min-width:957px) {
+    .music-table-mobile {
+        display:none;
+    }
+}
+   
+@media screen and (max-width:768px) {   
+    
+    .background.music {
+        padding:50px 0;
+    }
+    
+    .music-table-text {
+        margin-bottom: 30px;
+    }
+    
+    .xmas-image {
+        display:flex;
+        flex-direction: inherit;
+        justify-content:center;
+        margin-top:30px;
+    }
+}
+
+
+/*@media screen and (max-width:680px) {
+    .image-main {
+        margin-top:170px;
+    }
+    
+}*/
+
+
 
 @media screen and (max-width:350px) {
     .xmas-image {
