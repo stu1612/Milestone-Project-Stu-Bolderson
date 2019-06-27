@@ -21,11 +21,15 @@ HTML {
     font-family:"Acme", sans-serif;
 }
 
-.anchor{
-  display: block;
-  height: 115px; 
-  margin-top: -115px;
-  visibility: hidden;
+.anchor {
+    display: block;
+    height: 115px; 
+    margin-top: -115px;
+    visibility: hidden;
+}
+
+span {
+    color:#f3df00;
 }
 
 
@@ -356,18 +360,40 @@ th {
 .events-img-txt {
     display:flex;
     flex-direction:row;
+    align-items:center;
     margin:auto;
     width:80%;
     padding-bottom:30px;
+    justify-content:space-around;
+}
+
+.events-img-txt img {
+    width:450px;
+    height:auto;
 }
 
 .events-text {
-    padding:0 30px;
     background-color:rgba(255,255,255,0.4);
     border-radius:4rem;
     padding: 10px 30px;
-    margin:0 30px;
-    text-align:center;
+    margin:auto;
+    text-align:left;
+    width:80%;
+}
+
+.events-text h2 {
+    text-transform:uppercase;
+    color:#fafae6;
+    font-size:40px;
+    text-shadow:2px 2px #3a89a4;
+}
+
+.events-text p {
+    padding:0 20px;
+    line-height:35px;
+    letter-spacing:0.5px;
+    color:#fafae6;
+    font-size:20px;
 }
 
 input[type=text], select, textarea {
@@ -396,9 +422,17 @@ input[type=submit]:hover {
 
 .container.contact {
     padding: 20px;
-    width:40%;
-    display:block;
-    margin:auto;
+    width:50%;
+    display:flex;
+}
+
+.socialmedia-icons i {
+  color:#fafae6;
+  padding:20px;
+}
+
+.socialmedia-icons i:hover {
+  color:#f3df00;
 }
 
 
@@ -413,7 +447,8 @@ input[type=submit]:hover {
   background-color: #3a89a4;
   color: #fafae6;
   text-align: center;
-  padding-bottom:1rem;
+  height:100%;
+  padding-top:1rem;
 }
 
 
@@ -573,7 +608,7 @@ input[type=submit]:hover {
 
 @media screen and (max-width:1024px) {
     .events-img-txt {
-        flex-direction:column;
+        flex-direction:row;
     }
     
     .events-img {
@@ -582,14 +617,23 @@ input[type=submit]:hover {
     }
 }
 
-@media screen and (max-width:768px) {
-    .container.contact {
-        width:80%;
-    }
-    .events-img img {
-    width:100%;
+@media screen and (max-width:922px) {
+    .events-img-txt {
+        flex-direction:column;
     }
 }
+
+@media screen and (max-width:768px) {
+    .container.contact {
+        width:90%;
+    }
+    .events-img-txt img {
+        width:100%;
+        margin-top:20px
+    }
+}
+
+
 
 
 
