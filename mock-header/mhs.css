@@ -177,7 +177,7 @@ label {
 
 .music-table-text {
     text-align:justify;
-    width:70%;
+    width:80%;
     margin:0 auto;
     margin-bottom:100px;
 }
@@ -190,9 +190,9 @@ label {
 .music-table {
     display:block;
     margin:auto;
-    background-color:#fafae6;
+    background-color:rgba(255,255,255,0.4);
     padding:5px;
-    border:5px solid #3a89a4;
+    border:8px solid #3a89a4;
 }
 
 .music-col a {
@@ -230,6 +230,10 @@ td a {
 
 tr {
     text-align:center;
+}
+
+.music-col {
+    padding:30px;
 }
 
 /*------------- mobile dropdown ---------------*/
@@ -354,8 +358,6 @@ input[type=submit]:hover {
     margin:auto;
 }
 
-
-   
 
 
 
@@ -535,6 +537,9 @@ input[type=submit]:hover {
 @media screen and (max-width:768px) {
     .container.contact {
         width:80%;
+    }
+    .events-img img {
+    width:100%;
     }
 }
 
