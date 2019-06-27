@@ -18,6 +18,7 @@ body {
 
 HTML {
     scroll-behavior:smooth;
+    font-family:"Acme", sans-serif;
 }
 
 .anchor{
@@ -111,7 +112,7 @@ label {
 }
 
 .content-box {
-    height:400px;
+    height:auto;
     width:80%;
     border-radius:4rem;
     display:flex;
@@ -148,7 +149,10 @@ label {
 .text-box p {
     padding:0 20px;
     display:flex;
-    text-align:center
+    text-align:center;
+    line-height:45px;
+    letter-spacing:0.5px;
+    color:#545050;
 }
 
 .image-box {
@@ -216,34 +220,37 @@ label {
 }
 
 .pull-left {
-    height:120px;
-    width:120px;
+    height:110px;
+    width:110px;
     border-radius:50%;
     margin-right:15px;
     margin-bottom:10px;
+    transition:0.5s linear;
 }
 
 tr {
     text-align:center;
 }
 
-.class-1 {
+.class-1, .class-1 a {
   background-color:#fafae6;
-}
-
-.class-2 {
-  background-color:#d92b39;
-}
-
-.class-1 a {
   color:black;
   text-transform:uppercase;
+  transition:0.5s linear;
 }
 
-.class-2 a {
+.class-2, .class-2 a {
+  background-color:#d92b39;
   color:#fafae6;
   text-transform:uppercase;
+  transition:0.5s linear;
 }
+
+.class-1:hover, .class-1 a:hover, .class-2:hover, .class-2 a:hover {
+    background-color:#3a89a4;
+    color:#fafae6;
+}
+
 /*------------- mobile dropdown ---------------*/
 
 .music-table-mobile {
