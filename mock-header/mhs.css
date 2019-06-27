@@ -282,7 +282,7 @@ th {
   transition:0.5s linear;
 }
 
-.class-1:hover, .class-1 a:hover, .class-2:hover, .class-2 a:hover {
+td:hover {
     background-color:#3a89a4;
     color:#fafae6;
 }
@@ -299,11 +299,14 @@ th {
     padding: 16px;
     border: none;
     cursor: pointer;
+    font-family:"Acme";
+    font-size:20px;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    font-family:"Acme";
 }
 
 .dropdown-content {
@@ -578,6 +581,11 @@ input[type=submit]:hover {
         width:80%;
         border:none;
     }
+    .text-box p {
+        padding:0 10px;
+        text-align:justify;
+        font-size:20px;
+    }
 }
 
 
@@ -609,6 +617,16 @@ input[type=submit]:hover {
         border-radius:5rem;
     }
 }
+
+@media screen and (max-width:649px) {
+    .music-table-text p {
+    padding:0 10px;
+    text-align:justify;
+    line-height:35px;
+    font-size:20px;
+    }
+}
+
 
 @media screen and (max-width:500px) {
     .band-image {
