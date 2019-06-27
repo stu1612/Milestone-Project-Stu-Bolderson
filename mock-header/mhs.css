@@ -188,35 +188,31 @@ label {
 }
 
 .music-table {
-    display:block;
+    display:flex;
+    justify-content:space-between;
     margin:auto;
     background-color:rgba(255,255,255,0.4);
-    padding:5px;
-    border:8px solid #3a89a4;
+    padding:10px;   
+}
+
+.music-col {
+    padding:10px;
+    border:1px solid black;
 }
 
 .music-col a {
     text-decoration:none;
+    display:flex;
+    justify-content:space-evenly;
 }
 
-
-td a {
-    display:flex;
-    margin: 30px 10px 0 10px;  
+.music-col a p {
+    margin:auto;
 }
 
 .album-song {
     text-decoration:none;
-    background-color:#3a89a4;
-    color:#fafae6;
-    border-radius:5rem;
-    margin-left:10px;
-    padding:5px;
-}
-
-.album-song:hover {
-    color:#3a89a4;
-    background-color:#fafae6;
+    color:black;
 }
 
 .pull-left {
@@ -225,17 +221,29 @@ td a {
     border-radius:50%;
     margin-right:15px;
     margin-bottom:10px;
-    border:2px solid #e39134;
 }
 
 tr {
     text-align:center;
 }
 
-.music-col {
-    padding:30px;
+.class-1 {
+  background-color:#fafae6;
 }
 
+.class-2 {
+  background-color:#d92b39;
+}
+
+.class-1 a {
+  color:black;
+  text-transform:uppercase;
+}
+
+.class-2 a {
+  color:#fafae6;
+  text-transform:uppercase;
+}
 /*------------- mobile dropdown ---------------*/
 
 .music-table-mobile {
