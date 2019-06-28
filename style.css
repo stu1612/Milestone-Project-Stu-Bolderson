@@ -94,7 +94,7 @@ label {
 /*------------------------------ main banner image -------------*/
 
 .banner-image {
-    background-image: url("../assets/images/cover4.jpg");
+    background-image: url("./assets/images/cover4.jpg");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
