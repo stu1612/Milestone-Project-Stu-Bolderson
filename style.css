@@ -419,6 +419,14 @@ input[type=submit]:hover {
 
 /*------------------------------- MEDIA QUERIES --------------------*/
 
+@media screen and (max-width:500px) {
+     p {
+        padding:0 10px;
+        text-align:justify;
+        font-size:20px;
+    }
+}
+
 /*------------------------------- NAVBAR MEDIA QUERIES --------------------*/
 
 @media screen and (max-width:898px) {
@@ -536,12 +544,14 @@ input[type=submit]:hover {
         width:80%;
         border:none;
     }
-    .text-box p {
-        padding:0 10px;
-        text-align:justify;
-        font-size:20px;
+}
+
+@media screen and (max-width:500px) {
+    .content-box {
+        width:90%
     }
 }
+
 
 
 /*------------------------------- THE MUSIC MEDIA QUERIES --------------------*/
@@ -558,9 +568,11 @@ input[type=submit]:hover {
         display:block;
         margin:auto;
     }
+    
     .music-table {
         display:none;
     }
+    
     .dropdown {
         display:block;
         margin:auto;
@@ -573,15 +585,6 @@ input[type=submit]:hover {
     }
 }
 
-@media screen and (max-width:649px) {
-    .music-table-text p {
-    padding:0 10px;
-    text-align:justify;
-    line-height:35px;
-    font-size:20px;
-    }
-}
-
 
 @media screen and (max-width:500px) {
     .band-image {
@@ -589,6 +592,11 @@ input[type=submit]:hover {
         height:auto;
         width:auto;
     }
+    
+    .music-table-text {
+        width:90%;
+    }
+    
 }
 
 
@@ -615,14 +623,30 @@ input[type=submit]:hover {
     .container.contact {
         width:90%;
     }
-    .events-img-txt img {
+    
+    .events-text  {
         width:100%;
-        margin-top:20px
+    }
+    
+    .events-img-txt img {
+        padding-bottom:20px;
     }
 }
 
+@media screen and (max-width:768px) {
+    .events-img-txt {
+        width:90%;
+    }
+}
 
-
+@media screen and (max-width:500px) {
+     .events-text p {
+        padding:0 10px;
+        text-align:justify;
+        font-size:20px;
+    }
+    
+}
 
 
 
