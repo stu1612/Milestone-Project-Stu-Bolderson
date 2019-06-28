@@ -199,6 +199,8 @@ h1 {
     width:80%;
     margin:0 auto;
     margin-bottom:100px;
+    background-color:rgba(255,255,255,.4);
+    border-radius:4rem;
 }
 
 .music-table-text p {
@@ -207,14 +209,14 @@ h1 {
     text-align:center;
     line-height:40px;
     letter-spacing:0.5px;
-    color:#fafae6;
+    color:#545050;
     font-size:25px;
 }
 
 .music-table-text h2 {
     text-align:center;
     margin-bottom:40px;
-    color:#fafae6;
+    color:black;
     font-size:40px;
     text-shadow:2px 2px #3a89a4;
     text-transform:uppercase;
@@ -224,9 +226,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    background-color: rgba(255,255,255,0.4);
     padding: 60px;
-    border: 3px solid #545050;
     border-radius: 5%;   
 }
 
@@ -263,23 +263,15 @@ tr {
     text-align:center;
 }
 
-th {
-    font-size:25px;
-    padding:10px;
-}
-
-.class-1, .class-1 a {
+.music-col, .music-col a {
   background-color:#fafae6;
   color:black;
   text-transform:uppercase;
   transition:0.5s linear;
 }
 
-.class-2, .class-2 a {
-  background-color:#d92b39;
-  color:#fafae6;
-  text-transform:uppercase;
-  transition:0.5s linear;
+td {
+    transition:0.5 s linear;
 }
 
 td:hover {
