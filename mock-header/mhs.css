@@ -489,6 +489,7 @@ input[type=submit]:hover {
         display:block;
         cursor:pointer;
         margin:auto;
+        float:none;       
     }
     
     .menu {
@@ -507,10 +508,6 @@ input[type=submit]:hover {
     #toggle:checked + .menu {
         display:block;
     }
-    
-    .banner-image {
-        margin-top:210px;
-    } 
 }
 
 
