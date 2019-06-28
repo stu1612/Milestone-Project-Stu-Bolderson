@@ -255,7 +255,7 @@ tr {
 }
 
 td {
-    transition:0.5 s linear;
+    transition:0.5s linear;
 }
 
 td:hover {
