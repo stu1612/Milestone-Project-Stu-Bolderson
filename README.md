@@ -9,7 +9,7 @@ User Stories:
 
                "As a user, I want the wesiste to look vibrant, clean and retro as it reminds me of when i listened to 'The Monkees' during the 60's"
 
-                "As a user, I want to be able to be able to hear or watch music from 'The Monkees' whether I am at a computer or on my mobile phone."
+              "As a user, I want to be able to be able to hear or watch music from 'The Monkees' whether I am at a computer or on my mobile phone."
               
                 "As a user, I want to be able to focus on what I enjoy about "The Monkees" - the music, old pictures whilst also being able to quickly and easily navigate to the site to its contents.  It has to be easy to read and clear the intentions of the page I am looking at.
             
@@ -60,7 +60,12 @@ The image sizes must change to visually fit in all resolutions.
 
 ## Deployment
 
-This project was created locally from the AWS Cloud 9 terminal which was then hosted to Github.  The code written in AWS should not be any different from the code presented in Github.
+This project was created locally from the AWS Cloud 9 terminal which was then hosted to Github.
+File set up was created from AWS - github repository was created Milestone-Project-Stu-Bolderson
+Tree Structure -
+*Milestone-Project-Stu-Bolderson > assets (>images, >thumbnails) > index.html - style.css - reset.css - readme.md
+*The project was deployed to [https://github.com/stu1612/Milestone-Project-Stu-Bolderson]
+The code written in AWS should not be any different from the code presented in Github.
 
 ### Credits
 
