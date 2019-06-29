@@ -32,6 +32,7 @@ h1 {
     font-size:40px;
     text-shadow:2px 2px #3a89a4;
     text-transform:uppercase;
+    margin-bottom: 40px
 }
 
 h2 {
@@ -146,6 +147,7 @@ label {
     flex-direction:row;
     margin:auto;
     background-color:rgba(255,255,255,0.3);
+    padding:inherit;
 }
 
 .circle-images {
@@ -203,9 +205,10 @@ label {
     text-align:justify;
     width:80%;
     margin:0 auto;
-    margin-bottom:100px;
+    margin-bottom:50px;
     background-color:rgba(255,255,255,.4);
     border-radius:4rem;
+    padding: inherit;
 }
 
 .music-table {
@@ -349,6 +352,7 @@ td:hover {
     justify-content:space-around;
     background-color:rgba(255,255,255,0.3);
     border-radius:4rem;
+    padding: inherit;
 }
 
 .events-img-txt img {
@@ -359,7 +363,7 @@ td:hover {
 
 .events-text {   
     text-align:left;
-    width:50%;
+    width:60%;
 }
 
 .events-text p {
